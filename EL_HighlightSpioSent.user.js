@@ -11,7 +11,6 @@
 (function() {
     'use strict';
     document.addEventListener('click', function (event) {
-        console.log(event.target);
         if (event.target instanceof HTMLImageElement && event.target.baseURI.indexOf("galaxy.phtml") > -1) {
             event.target.setStyle("background:red;");
         }
